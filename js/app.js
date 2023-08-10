@@ -49,6 +49,16 @@ if (mySiblings === 'yes' || mySiblings === 'y') {
   alert("Wrong K'hari does have 7 siblings");
   }
 
+  let cars = prompt("Does K'hari like cars?").toLowerCase();
+
+  if (mySiblings === 'yes' || mySiblings === 'y') {
+    userScore++;
+    console.log("userScore: ", userScore);
+    alert("Of course! " + username + ". K'hari loves cars!");
+    } else {
+    alert("Wrong K'hari loves cars!");
+    }
+
 let correctAnswer = 4;
 let userGuess;
 

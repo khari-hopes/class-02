@@ -61,23 +61,23 @@ while (correctAnswer !== userGuess) {
   } else if (userGuess > correctAnswer) {
     alert("Too high");
   } else if (userGuess === correctAnswer) {
-    alert("Somebody was paying attention! K'hari does indeed have" + correctAnswer + "middle names")
+    alert("Somebody was paying attention! K'hari does indeed have " + correctAnswer + " middle names");
     userScore++;
   }
 }
 
-let interestArray = [
-"Mclaren 720s",
-"Shelby GT500",
-"Ford GT",
-"Audi R8",
-"Lamborghini Aventador SVJ",
-"Tesla X Plaid",
-"Hellcat Durango",
-"Trackhawk",
-"AMG GT63 S",
-"Porsche Turbo S",
-].toLowerCase();
+let interestsArray = [
+  "Mclaren 720s",
+  "Shelby GT500",
+  "Ford GT",
+  "Audi R8",
+  "Lamborghini Aventador SVJ",
+  "Tesla X Plaid",
+  "Hellcat Durango",
+  "Trackhawk",
+  "AMG GT63 S",
+  "Porsche Turbo S",
+];
 
 let attempts = 3;
 
@@ -87,18 +87,17 @@ hasAttempts: while (attempts !== 0) {
 
   for (let i = 0; i < interestsArray.length; i++) {
     if (userGuess === interestsArray[i]) {
+      userScore++;
       alert("Yes! " + interestsArray[i] + " is on the list.");
       break hasAttempts;
     }
   }
 
-  alert("Wrong, Try again! You have " + attempts + " attempts left.");
-
-  if (!attempts) {
-    alert(
-      "You're out of attempts. The correct answers are: " +
-        interestsArray.toString()
-    );
+  if (attempts > 0) {
+    alert("Wrong, Try again! You have " + attempts + " attempts left.");
+  } else {
+    alert("You're out of attempts. The correct answers are: " +
+      interestsArray.join(", "));
   }
 }
 

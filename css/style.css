@@ -9,7 +9,7 @@ img {
 }
 
 footer {
-  text-align: center;;
+  text-align: center;
   background-color: #ffd100;
 }
 
@@ -33,4 +33,12 @@ main {
 
 .dream {
   text-align: center;
+}
+
+#lists {
+  color: #00447B;
+}
+
+#numberedLists {
+  color: #00447B;
 }

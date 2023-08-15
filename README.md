@@ -19,3 +19,6 @@ This website is all about me. Please take a look around and hope you learn a thi
 
 * Consider including the answers to your daily journal and submission questions here
 * This is also a good place to reflect on the tools and resources used and learned
+
+### Navigator - Khari Hopes
+### Driver - Caleb McKinney - added functions to JS
